@@ -1,0 +1,44 @@
+/*# SEARCHABLE DB #*/
+.SearchableDBWrapper {margin-top:30px;}
+/*# SEARCHABLE DB/Responsive CSS #*/
+.SearchableDBWrapper .row {width: 100%; margin: 0 auto; overflow: hidden; padding: 10px 20px;}
+/*# SEARCHABLE DB/Paging #*/
+.SearchableDBWrapper .PagerResults{float: left; font-weight: normal !important; font-family: arial; font-size: 12px;}
+.SearchableDBWrapper .PagerControl{border: solid 1px #dddddd; margin-top: 10px; width:100%; overflow:hidden; padding:5px;}
+.SearchableDBWrapper .PagerNumberArea{float:right;}
+.SearchableDBWrapper .PagerNumberArea a{text-decoration:none; color:#32438c;}
+.SearchableDBWrapper .PagerNumberArea .SelectedPrev, .SelectedNext, .SelectedPage{color:#32438c;}
+.SearchableDBWrapper .PagerNumberArea .SelectedPage{color:#32438c;}
+/* SEARCHABLE DB/Custom Search */
+.CustomSearchWrapper .row{margin:0px !important}
+.CustomSearchWrapper{border:solid 1px #dddddd; max-width:1220px;}
+.CustomSearchWrapper label{font-weight:bold; font-family: 'Trade Gothic W01 Cn 18', sans-serif; font-size: 16px; color: #272727;}
+.CustomSearchWrapper select{width:100%;}
+.CustomSearchWrapper input{width:100%;}
+.CustomSearchWrapper .instructions{color:#414141; font-size:12px; font-family:Arial, Helvetica, sans-serif;}
+.CustomSearchWrapper #SearchBtn{cursor:pointer; font-family: 'HelveticaNeueW02-Thin', sans-serif; font-size: 14px; background: #32438c; color: #d6d9e8; display: block;  border:0px; padding:10px 0px;}
+.CustomSearchWrapper #SearchBtn:hover{opacity:0.75;}
+
+/* SEARCHABLE DB/Custom Sort */
+.CustomSearchSort{border:solid 1px #dddddd; margin:10px 0px 0px; max-width:1220px; }
+.CustomSearchSort .row{overflow:hidden;}
+.CustomSearchSort #SeeAllBtn{cursor:pointer; font-family: 'HelveticaNeueW02-Thin', sans-serif; font-size: 12px; background: #32438c; color: #d6d9e8; display: block;  border:0px; padding:5px 10px;}
+.CustomSearchSort #SeeAllBtn:hover{opacity:0.75;}
+.CustomSearch {margin: 0px;}
+
+/*# SEARCHABLE DB/Search Results #*/
+.SearchableDBWrapper .CompanySearchResult{margin:15px 0px 0px 0px !important; padding:0px 0px 15px 0px !important; border-bottom:solid 1px #898989; font-size:12px;}
+.SearchableDBWrapper .CompanySearchResult label{font-family:arial; font-weight:bold; color:#272727; font-size:12px;}
+.SearchableDBWrapper .CompanySearchResultTitle{font-family: 'Trade Gothic W01 Cn 18', sans-serif; font-size: 30px; color: #32438c;}
+.SearchableDBWrapper .CompanySearchResultTitle a{font-family: 'Trade Gothic W01 Cn 18', sans-serif; font-size: 30px; color: #32438c;}
+.SearchableDBWrapper .CompanySearchResultDescription{line-height:15px;}
+.SearchableDBWrapper .CompanySortResults{background:#f6f6f6; padding:2px 5px; border:solid 1px #dfdfdf; margin-bottom:10px;}
+
+@media (min-width: 768px) {
+/*# SEARCHABLE DB/Responsive CSS #*/
+.SearchableDBWrapper {margin-top:30px;}
+.SearchableDBWrapper .row {width: 100%; margin: 0 auto; overflow: hidden; padding: 10px 20px;}
+.SearchableDBWrapper .row .threecol {width: 22.05%;}
+.SearchableDBWrapper .row .ninecol{display:none;}
+.SearchableDBWrapper .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol {margin-right: 2.8%;float: left;min-height: 1px;}
+}

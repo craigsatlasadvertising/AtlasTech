@@ -1,0 +1,64 @@
+<!-- CODE: Page -->
+<div class="secondary-wrapper">
+    <div class="container">
+        <div class="row hidden-print hidden-xs">
+            <div class="secondary-header-wrapper">
+                <cc1:CMSWebPartZone ID="wpzHeaderImage" runat="server" />
+            </div>
+        </div>
+        <div class="row hidden-xs hidden-sm hidden-print">
+            <div class="col-sm-6">
+                <cc1:CMSWebPartZone ID="wpzBreadCrumbs" runat="server" />
+            </div>
+            <div class="col-sm-6">
+                <cc1:CMSWebPartZone ID="wpzMyFavorites" runat="server" />
+            </div>
+        </div>
+        <div class="secondary-content row">
+            <div class="col-md-2 col-sm-3 hidden-xs hidden-print">
+                <div class="secondary-nav">
+                    <cc1:CMSWebPartZone ID="wpzSecondaryNav" runat="server" />
+                </div>
+            </div>
+            <!-- CODE: Inline -->
+            <div class="SearchableDBWrapper col-md-10 col-sm-9">
+                <cc1:CMSWebPartZone ID="wpzIndustrialDirectory" runat="server" />
+            </div>
+            <!-- END CODE: Inline -->
+        </div>
+    </div>
+</div>
+<!-- END CODE: Page -->
+
+<!-- CODE: Transformation -->
+<div class="CompanySearchResult row">
+  <div class="CompanySearchResultTitle col-md-12"><a target="_blank" href="http://<%# Eval("WebAddress") %>"><%# Eval("CompanyName") %></a></div>
+  <div class="col-md-3">
+      <label>Address: </label> <%# Eval("PrimaryAddress1") %><br>
+      <label>City: </label> <%# Eval("PrimaryCity") %><br>
+      <label>Phone:</label> <%# Eval("PhoneNumber") %>
+  </div>
+  <div class="col-md-5">
+      <label>Primary Industry: </label> <%# Eval("PrimaryIndustry") %><br>
+      <label>Line of Business: </label> <%# Eval("LineofBusiness") %>
+      
+  </div>
+  <div class="col-md-4">
+      <label>Primary US NAICS Code: </label> <%# Eval("PrimaryUSNAICSCode") %><br>
+      <label>All NAICS Codes: </label> <%# Eval("AllNAICSCodes") %>
+  </div>
+</div>
+<!-- END CODE: Transformation -->
+
+<!-- 
+Reference Site:  Muncie
+Reference URL: http://prod.muncie.cciconstellation.net/Site-Selection-Data/Industrial-Directory.aspx
+
+--------------------------------------------------------------------------------------------------------------
+
+Version:1.0
+Developer: Craig
+Date: 7/30/14
+Notes: First Development
+-->
+
